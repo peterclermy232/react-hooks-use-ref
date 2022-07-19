@@ -10,7 +10,6 @@ function Ticker() {
   useEffect(() => {
     // use the current value of the ref
     const prevPrice = prevPrice.current;
-    
     if(price > prevPrice){
       setColor("green");
     }else if(price < prevPrice){
@@ -19,8 +18,8 @@ function Ticker() {
       setColor("black");
     }
     // set the new value of the ref (note: this doesn't trigger a re-render)
-    prevPriceRef.current = price;
-  },[price]);
+    prevPrice current
+  })
 
   useEffect(() => {
     // every 1 second , generate a new random price

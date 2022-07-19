@@ -9,8 +9,7 @@ function Ticker() {
 
   useEffect(() => {
     // use the current value of the ref
-    const prevPrice = prevPrice.current;
-    
+    //const prevPrice = prevPrice.current;
     if(price > prevPrice){
       setColor("green");
     }else if(price < prevPrice){

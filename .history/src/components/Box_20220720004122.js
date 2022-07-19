@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
 
-
+const elementRef = useRef();
 
 function Box() {
   const elementRef = useRef();
- 
   function handleMeasureClick(){
     const div = elementRef.current;
     console.log("Measurements: ", div.getBoundingClientRect())
@@ -14,7 +13,7 @@ function Box() {
   return (
     <div ref={elementRef}>
       <h1>Box</h1>
-      <button onClick={handleMeasureClick}>Measure</button>
+      <button>Measure</button>
     </div>
   );
 }

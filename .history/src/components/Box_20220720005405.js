@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 
 
 function Box() {
-  const elementRef = useRef();
  
   function handleMeasureClick(){
     const div = elementRef.current;
